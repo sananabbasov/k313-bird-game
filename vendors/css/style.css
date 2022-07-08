@@ -3,6 +3,10 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    padding: 0;
+    margin: 0;
+}
 
 #gamezone{
     background-image: url("../img/bg.png");
@@ -24,6 +28,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 100;
 }
 
 #gamezone .basket{
@@ -37,6 +42,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 0;
+    z-index: 101;
+    
 }
 
 #gamezone .snake{
@@ -51,5 +58,15 @@ body{
     background-size: contain;
     top: 16%;
     left: 5%;
+    z-index: 100;
     
+}
+#gamezone .score{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
 }
